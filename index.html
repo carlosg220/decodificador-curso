@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <img src="img/coffe.png" alt="logo-page" class="logo-page">
+    </header>
+
+    <main class="main-container">
+        
+        <section class="input-container">
+            <div id="input-container-area">
+                <textarea maxlength="700" required placeholder="Digite seu texto..." id="input-area" oninput="verificarInput()"></textarea>
+
+                <div id="input-area-btn">
+                    <p class="text-input-restricao" style="color: #DCD7C9;"><ion-icon name="alert"></ion-icon>Apenas letras minúsculas e sem acento</p>
+                
+                    <div class="container-btn">
+                        <button id="btn-cript" onclick="criptografar()" disabled="false">Criptografar</button>
+                        <button id="btn-descript" onclick="descriptografar()" disabled="false">Descriptografar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="output__container">
+            <div class="output__area">
+               
+                    <div id="output__content__area">
+                        <img src="img/coffe.png" alt="logo-output" class="logo__output">
+                        <h2 class="text__output__content">Nenhuma mensagem encontrada</h2>
+                        <p class="text__output__content">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="content-rodape">
+            <h2>Desenvolvido por Carlos Gabriel</h2>
+                <a target="_blank" href="https://www.instagram.com/_carlos.sgomes/" style="color: #12372A;"><ion-icon name="logo-instagram" class="icons-rodape"></ion-icon></a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/carlos-gabriel-dev/" style="color: #12372A;"><ion-icon name="logo-linkedin" class="icons-rodape"></ion-icon></a>
+
+                <a target="_blank" href="https://github.com/carlosg220" style="color: #12372A;"><ion-icon name="logo-github" class="icons-rodape"></ion-icon></a>
+        </div>
+    </footer>
+
+    <script  src = "https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"> </script>
+    <script src="script.js"></script>
+</body>
+</html>
